@@ -16,7 +16,7 @@ guess = st.number_input("Your guess", min_value=1, max_value=100, value=1, step=
 if st.button("Submit"):
     st.session_state.attempts += 1
     if guess == st.session_state.x:
-        st.success(f"Congratulations! I love You {st.session_state.attempts} times.")
+        st.success(f"Congratulations! You gets {st.session_state.attempts} kissi pucchi.")
         st.session_state.win = True
     elif guess < st.session_state.x:
         st.warning("Too low! Try again.")
